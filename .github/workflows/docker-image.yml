@@ -25,6 +25,6 @@ jobs:
       run: docker build . --file Dockerfile --tag megamanics.jfrog.io/docker/my-docker-image:latest
     
     - uses: opspresso/action-docker@v0.2.13
-      name: push
+    - name: push
       run: docker push megamanics.jfrog.io/docker/my-docker-image:latest
       
