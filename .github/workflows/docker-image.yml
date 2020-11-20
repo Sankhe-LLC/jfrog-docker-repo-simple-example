@@ -22,4 +22,6 @@ jobs:
     
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag megamanics.jfrog.io/docker/my-docker-image:latest
+      run: |
+      docker build . --file Dockerfile --tag megamanics.jfrog.io/docker/my-docker-image:latest
+      docker push megamanics.jfrog.io/docker/my-docker-image:latest
